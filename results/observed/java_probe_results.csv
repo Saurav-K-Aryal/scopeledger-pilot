@@ -1,0 +1,34 @@
+file,probe,input,returncode,stdout,stderr,target_disclosure_observed
+DirectResolve.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+DirectResolve.java,parent_escape,../outside.txt,0,PRIVATE_OUTSIDE,,True
+DirectResolve.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,0,PRIVATE_OUTSIDE,,True
+DirectResolve.java,prefix_sibling_escape,../root_evil/outside.txt,0,PRIVATE_SIBLING,,True
+FileJoin.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+FileJoin.java,parent_escape,../outside.txt,0,PRIVATE_OUTSIDE,,True
+FileJoin.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,1,,"Exception in thread ""main"" java.nio.file.NoSuchFileException: <WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/root<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at FileJoin.main(FileJoin.java:6)
+",False
+FileJoin.java,prefix_sibling_escape,../root_evil/outside.txt,0,PRIVATE_SIBLING,,True
+CheckedNormalize.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+CheckedNormalize.java,parent_escape,../outside.txt,0,BLOCKED,,False
+CheckedNormalize.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,0,BLOCKED,,False
+CheckedNormalize.java,prefix_sibling_escape,../root_evil/outside.txt,0,BLOCKED,,False
+DotDotFilter.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+DotDotFilter.java,parent_escape,../outside.txt,0,BLOCKED,,False
+DotDotFilter.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,0,PRIVATE_OUTSIDE,,True
+DotDotFilter.java,prefix_sibling_escape,../root_evil/outside.txt,0,BLOCKED,,False
+ConstantFile.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+ConstantFile.java,parent_escape,../outside.txt,0,PUBLIC_INSIDE,,False
+ConstantFile.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,0,PUBLIC_INSIDE,,False
+ConstantFile.java,prefix_sibling_escape,../root_evil/outside.txt,0,PUBLIC_INSIDE,,False
+StringPrefix.java,legitimate,inside.txt,0,PUBLIC_INSIDE,,False
+StringPrefix.java,parent_escape,../outside.txt,0,BLOCKED,,False
+StringPrefix.java,absolute_escape,<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt,0,BLOCKED,,False
+StringPrefix.java,prefix_sibling_escape,../root_evil/outside.txt,0,PRIVATE_SIBLING,,True

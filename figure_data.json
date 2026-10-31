@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "provenance": [
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/result.json",
+      "sha256": "95471df429265cdcbab6d0f4ce816dc2a749549d4fdcc2e9bc1f823c4dce5c13"
+    },
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/analysis_reports.json",
+      "sha256": "cb7a52ecdbba36fd305101d4d877ac2d910b6f245abce297f706bf683a47879f"
+    },
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/triage_results.csv",
+      "sha256": "2993fcf5897eb3c720e98a938ed54aa1958c920cf443b8aaac6ac0fc7c0038d4"
+    },
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_probe_results.csv",
+      "sha256": "61f576b4b790246592976e67c647b3530213e62af9745298187d1135574efb28"
+    },
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/javac_command.json",
+      "sha256": "a723b1429e57e081afb64060ddc15946c1c41acc7c6c9eb779c791d084f348a6"
+    },
+    {
+      "path": "runs/prelim-supplement-security-03-semgrep-20261031/03/path_read_rule.yml",
+      "sha256": "73d06aeb3ad73a606ecf1f9d587c9a50abe6b5f9b6ed84e304675dca58154be5"
+    },
+    {
+      "path": "pilots/experiments/p03_scope_ledger.py",
+      "sha256": "5cdf2646f1baadebea7be45ba0cd74d799237fc02085951aaa69e8773bcde4e8"
+    }
+  ],
+  "metrics": {
+    "scanner": "semgrep",
+    "fixture_files": 6,
+    "files_with_target_disclosure_observed": 4,
+    "dynamic_probes": 24,
+    "conditions": {
+      "clean_current": {
+        "unqualified_report_consumer": {
+          "false_clearances": 0,
+          "clearances": 1,
+          "insufficient_evidence": 0,
+          "reported_findings": 5
+        },
+        "scope_qualified_consumer": {
+          "false_clearances": 0,
+          "clearances": 1,
+          "insufficient_evidence": 0,
+          "reported_findings": 5
+        }
+      },
+      "stale_previous_revision": {
+        "unqualified_report_consumer": {
+          "false_clearances": 0,
+          "clearances": 0,
+          "insufficient_evidence": 0,
+          "reported_findings": 6
+        },
+        "scope_qualified_consumer": {
+          "false_clearances": 0,
+          "clearances": 0,
+          "insufficient_evidence": 6,
+          "reported_findings": 0
+        }
+      },
+      "partial_current": {
+        "unqualified_report_consumer": {
+          "false_clearances": 2,
+          "clearances": 3,
+          "insufficient_evidence": 0,
+          "reported_findings": 3
+        },
+        "scope_qualified_consumer": {
+          "false_clearances": 0,
+          "clearances": 0,
+          "insufficient_evidence": 3,
+          "reported_findings": 3
+        }
+      },
+      "omitted_rule_pack": {
+        "unqualified_report_consumer": {
+          "false_clearances": 4,
+          "clearances": 6,
+          "insufficient_evidence": 0,
+          "reported_findings": 0
+        },
+        "scope_qualified_consumer": {
+          "false_clearances": 0,
+          "clearances": 0,
+          "insufficient_evidence": 6,
+          "reported_findings": 0
+        }
+      }
+    }
+  },
+  "scanner_versions": {
+    "clean_current": [
+      "1.183.0"
+    ],
+    "stale_previous_revision": [
+      "1.183.0"
+    ],
+    "partial_current": [
+      "1.183.0"
+    ],
+    "omitted_rule_pack": []
+  },
+  "probes": [
+    {
+      "file": "DirectResolve.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "DirectResolve.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "DirectResolve.java",
+      "probe": "absolute_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "DirectResolve.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "FileJoin.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "FileJoin.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "FileJoin.java",
+      "probe": "absolute_escape",
+      "returncode": 1,
+      "disclosure": false
+    },
+    {
+      "file": "FileJoin.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "CheckedNormalize.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "CheckedNormalize.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "CheckedNormalize.java",
+      "probe": "absolute_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "CheckedNormalize.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "DotDotFilter.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "DotDotFilter.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "DotDotFilter.java",
+      "probe": "absolute_escape",
+      "returncode": 0,
+      "disclosure": true
+    },
+    {
+      "file": "DotDotFilter.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "ConstantFile.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "ConstantFile.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "ConstantFile.java",
+      "probe": "absolute_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "ConstantFile.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "StringPrefix.java",
+      "probe": "legitimate",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "StringPrefix.java",
+      "probe": "parent_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "StringPrefix.java",
+      "probe": "absolute_escape",
+      "returncode": 0,
+      "disclosure": false
+    },
+    {
+      "file": "StringPrefix.java",
+      "probe": "prefix_sibling_escape",
+      "returncode": 0,
+      "disclosure": true
+    }
+  ],
+  "partial_files": [
+    "DirectResolve.java",
+    "CheckedNormalize.java",
+    "StringPrefix.java"
+  ],
+  "limits": [
+    "six authored files, four repeated probes each",
+    "no Semgrep invocation in simulated omitted-rule condition",
+    "scope consumer is deterministic; no LLM or recovery measured",
+    "no observed false-clearance benefit in stale condition"
+  ]
+}

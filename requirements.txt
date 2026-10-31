@@ -1,0 +1,2 @@
+semgrep==1.183.0
+matplotlib>=3.9,<4

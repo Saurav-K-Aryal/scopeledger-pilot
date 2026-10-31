@@ -1,0 +1,9 @@
+{
+  "resolved_executables": {
+    "git": "/opt/homebrew/bin/git",
+    "javac": "/Users/saurav.aryal_1/.jenv/shims/javac",
+    "java": "/Users/saurav.aryal_1/.jenv/shims/java"
+  },
+  "unavailable": [],
+  "configuration_probes": []
+}

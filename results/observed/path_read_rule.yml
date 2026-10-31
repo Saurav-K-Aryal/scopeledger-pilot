@@ -1,0 +1,10 @@
+rules:
+  - id: local-path-read
+    languages: [java]
+    message: Untrusted command-line path reaches a file read (fixture taint rule)
+    severity: WARNING
+    mode: taint
+    pattern-sources:
+      - pattern: args[1]
+    pattern-sinks:
+      - pattern: Files.readAllBytes(...)

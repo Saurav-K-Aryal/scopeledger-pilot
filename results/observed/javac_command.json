@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "javac",
+    "-d",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/classes",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java",
+    "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

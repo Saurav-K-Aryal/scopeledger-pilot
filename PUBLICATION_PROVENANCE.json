@@ -1,0 +1,147 @@
+{
+  "executor": "Saurav K. Aryal, with Codex-assisted implementation, execution, and manuscript preparation.",
+  "scope": "Authored local pilot. No funding application or unconfirmed faculty participation is published.",
+  "excluded": "Model weights/checkpoints, toolchain binaries, caches, virtual environments, git fixture internals, compiled Java classes, databases, and generated third-party runtimes.",
+  "files": [
+    {
+      "source": "pilots/__init__.py",
+      "published": "pilots/__init__.py",
+      "source_sha256": "7542e3a76d06725e5ba1edb2c773602b44f74adc06ed8f500f084a9204b1e114",
+      "published_sha256": "7542e3a76d06725e5ba1edb2c773602b44f74adc06ed8f500f084a9204b1e114",
+      "transformation": "none"
+    },
+    {
+      "source": "pilots/common.py",
+      "published": "pilots/common.py",
+      "source_sha256": "6744acd4f518fa14310fecc3f5756183bb6cb7c366f442017cf942991067dc9f",
+      "published_sha256": "6744acd4f518fa14310fecc3f5756183bb6cb7c366f442017cf942991067dc9f",
+      "transformation": "none"
+    },
+    {
+      "source": "pilots/experiments/__init__.py",
+      "published": "pilots/experiments/__init__.py",
+      "source_sha256": "5dd5c0a0f5a4e569b9f54d0a61c1ae38b88b82979b030378331eaa9fe7c4fb9b",
+      "published_sha256": "5dd5c0a0f5a4e569b9f54d0a61c1ae38b88b82979b030378331eaa9fe7c4fb9b",
+      "transformation": "none"
+    },
+    {
+      "source": "pilots/experiments/p03_scope_ledger.py",
+      "published": "pilots/experiments/p03_scope_ledger.py",
+      "source_sha256": "5cdf2646f1baadebea7be45ba0cd74d799237fc02085951aaa69e8773bcde4e8",
+      "published_sha256": "5cdf2646f1baadebea7be45ba0cd74d799237fc02085951aaa69e8773bcde4e8",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/analysis_reports.json",
+      "published": "results/observed/analysis_reports.json",
+      "source_sha256": "cb7a52ecdbba36fd305101d4d877ac2d910b6f245abce297f706bf683a47879f",
+      "published_sha256": "ef099ef796bf627e8929dea0e1f744a72960c3e1cbce5226afa38a5fbc328e12",
+      "transformation": "workspace absolute prefix replaced with <WORKSPACE>; numerical values unchanged"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_probe_results.csv",
+      "published": "results/observed/java_probe_results.csv",
+      "source_sha256": "61f576b4b790246592976e67c647b3530213e62af9745298187d1135574efb28",
+      "published_sha256": "c1ff928283c2390819169a6c10f1eacfb859ec6b1fa974dcd57ac9ee383ecc17",
+      "transformation": "workspace absolute prefix replaced with <WORKSPACE>; numerical values unchanged"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java",
+      "published": "results/observed/java_project/src/CheckedNormalize.java",
+      "source_sha256": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "published_sha256": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java",
+      "published": "results/observed/java_project/src/ConstantFile.java",
+      "source_sha256": "bbd5e878ab30eea66f54d861d73a3a3583ca1959ca4ad599d919eef61b22fc4d",
+      "published_sha256": "bbd5e878ab30eea66f54d861d73a3a3583ca1959ca4ad599d919eef61b22fc4d",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java",
+      "published": "results/observed/java_project/src/DirectResolve.java",
+      "source_sha256": "eb5b281dbebf8049fab5ec68cf5d9a5577215bdbe8446d89a429d37bb54d568b",
+      "published_sha256": "eb5b281dbebf8049fab5ec68cf5d9a5577215bdbe8446d89a429d37bb54d568b",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java",
+      "published": "results/observed/java_project/src/DotDotFilter.java",
+      "source_sha256": "a426b76d3081a5963a2416ea67926061e906d6ccd154227aa6074924e839b490",
+      "published_sha256": "a426b76d3081a5963a2416ea67926061e906d6ccd154227aa6074924e839b490",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java",
+      "published": "results/observed/java_project/src/FileJoin.java",
+      "source_sha256": "6ec577b0fa2567d7cf312f962d361936c1cc27e820eba3e3e712da1d00c0cf8f",
+      "published_sha256": "6ec577b0fa2567d7cf312f962d361936c1cc27e820eba3e3e712da1d00c0cf8f",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java",
+      "published": "results/observed/java_project/src/StringPrefix.java",
+      "source_sha256": "af63b6802d1403b38c4ea2071e1f035f588ca2c365e336135644b1c1e52e9db4",
+      "published_sha256": "af63b6802d1403b38c4ea2071e1f035f588ca2c365e336135644b1c1e52e9db4",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/javac_command.json",
+      "published": "results/observed/javac_command.json",
+      "source_sha256": "a723b1429e57e081afb64060ddc15946c1c41acc7c6c9eb779c791d084f348a6",
+      "published_sha256": "06b52c4d1d1f513b654949d8f2b952ee8e17307a0e35bdd27a686337268f76d9",
+      "transformation": "workspace absolute prefix replaced with <WORKSPACE>; numerical values unchanged"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/path_read_rule.yml",
+      "published": "results/observed/path_read_rule.yml",
+      "source_sha256": "73d06aeb3ad73a606ecf1f9d587c9a50abe6b5f9b6ed84e304675dca58154be5",
+      "published_sha256": "73d06aeb3ad73a606ecf1f9d587c9a50abe6b5f9b6ed84e304675dca58154be5",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/outside.txt",
+      "published": "results/observed/probe_sandbox/outside.txt",
+      "source_sha256": "9d0378857274714fcb54d40f545c613a104ca54dd01fc0b9ccf45ee8a858c90c",
+      "published_sha256": "9d0378857274714fcb54d40f545c613a104ca54dd01fc0b9ccf45ee8a858c90c",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/root/inside.txt",
+      "published": "results/observed/probe_sandbox/root/inside.txt",
+      "source_sha256": "bab6a60d0d8779e9f6e4ec9e6047c90971fa832e2c40a6696beda700fec5be80",
+      "published_sha256": "bab6a60d0d8779e9f6e4ec9e6047c90971fa832e2c40a6696beda700fec5be80",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/probe_sandbox/root_evil/outside.txt",
+      "published": "results/observed/probe_sandbox/root_evil/outside.txt",
+      "source_sha256": "90e6722a8e0a870eb76579c56884288d1de246c7026304c61c54ec1a1bc83db4",
+      "published_sha256": "90e6722a8e0a870eb76579c56884288d1de246c7026304c61c54ec1a1bc83db4",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/result.json",
+      "published": "results/observed/result.json",
+      "source_sha256": "95471df429265cdcbab6d0f4ce816dc2a749549d4fdcc2e9bc1f823c4dce5c13",
+      "published_sha256": "0ba549c84492440cee8f639c9ee450b0f53cb2f847ef37c486df52191e9a6d92",
+      "transformation": "workspace absolute prefix replaced with <WORKSPACE>; numerical values unchanged"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/toolchain_preflight.json",
+      "published": "results/observed/toolchain_preflight.json",
+      "source_sha256": "841dbce95188f61cfe3837d48240df0a22363de0d7166172588f82c2a2e67fc4",
+      "published_sha256": "841dbce95188f61cfe3837d48240df0a22363de0d7166172588f82c2a2e67fc4",
+      "transformation": "none"
+    },
+    {
+      "source": "runs/prelim-supplement-security-03-semgrep-20261031/03/triage_results.csv",
+      "published": "results/observed/triage_results.csv",
+      "source_sha256": "2993fcf5897eb3c720e98a938ed54aa1958c920cf443b8aaac6ac0fc7c0038d4",
+      "published_sha256": "2993fcf5897eb3c720e98a938ed54aa1958c920cf443b8aaac6ac0fc7c0038d4",
+      "transformation": "none"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "clean_current": {
+    "revision": "da561c9b19dbcf2566ea89e3984916af1e577380",
+    "source_hashes": {
+      "DirectResolve.java": "eb5b281dbebf8049fab5ec68cf5d9a5577215bdbe8446d89a429d37bb54d568b",
+      "FileJoin.java": "6ec577b0fa2567d7cf312f962d361936c1cc27e820eba3e3e712da1d00c0cf8f",
+      "CheckedNormalize.java": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "DotDotFilter.java": "a426b76d3081a5963a2416ea67926061e906d6ccd154227aa6074924e839b490",
+      "ConstantFile.java": "bbd5e878ab30eea66f54d861d73a3a3583ca1959ca4ad599d919eef61b22fc4d",
+      "StringPrefix.java": "af63b6802d1403b38c4ea2071e1f035f588ca2c365e336135644b1c1e52e9db4"
+    },
+    "invoked_files": [
+      "DirectResolve.java",
+      "FileJoin.java",
+      "CheckedNormalize.java",
+      "DotDotFilter.java",
+      "ConstantFile.java",
+      "StringPrefix.java"
+    ],
+    "finding_files": [
+      "CheckedNormalize.java",
+      "DirectResolve.java",
+      "DotDotFilter.java",
+      "FileJoin.java",
+      "StringPrefix.java"
+    ],
+    "rule_ids": [
+      "local-path-read"
+    ],
+    "scanner": "semgrep",
+    "commands": [
+      {
+        "argv": [
+          "<WORKSPACE>/.venv-semgrep/bin/semgrep",
+          "scan",
+          "--config",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/path_read_rule.yml",
+          "--json",
+          "--metrics=off",
+          "--disable-version-check",
+          "--no-git-ignore",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java"
+        ],
+        "returncode": 0,
+        "stdout": "{\"version\":\"1.183.0\",\"results\":[{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":320},\"end\":{\"line\":6,\"col\":52,\"offset\":341},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":239},\"end\":{\"line\":6,\"col\":52,\"offset\":260},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":307},\"end\":{\"line\":6,\"col\":52,\"offset\":328},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":256},\"end\":{\"line\":6,\"col\":52,\"offset\":277},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":338},\"end\":{\"line\":6,\"col\":52,\"offset\":359},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}}],\"errors\":[],\"paths\":{\"scanned\":[\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\"]},\"time\":{\"rules\":[],\"rules_parse_time\":0.0006239414215087891,\"profiling_times\":{\"config_time\":0.21278119087219238,\"core_time\":0.29397082328796387,\"ignores_time\":7.987022399902344e-05,\"total_time\":0.5162100791931152},\"parsing_time\":{\"total_time\":0.05003666877746582,\"per_file_time\":{\"mean\":0.008339444796244303,\"std_dev\":3.0614035356140654e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"scanning_time\":{\"total_time\":0.07234573364257812,\"per_file_time\":{\"mean\":0.01205762227376302,\"std_dev\":4.927164177893744e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"matching_time\":{\"total_time\":0.016349077224731445,\"per_file_and_rule_time\":{\"mean\":0.0027248462041219073,\"std_dev\":2.731428910212547e-09},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_files\":[]},\"tainting_time\":{\"total_time\":0.0037059783935546875,\"per_def_and_rule_time\":{\"mean\":0.00020588768853081597,\"std_dev\":5.5130772265621074e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_defs\":[]},\"fixpoint_timeouts\":[],\"prefiltering\":{\"project_level_time\":0.0,\"file_level_time\":0.0,\"rules_with_project_prefilters_ratio\":0.0,\"rules_with_file_prefilters_ratio\":1.0,\"rules_selected_ratio\":1.0,\"rules_matched_ratio\":1.0},\"targets\":[],\"total_bytes\":0,\"max_memory_bytes\":121734336},\"engine_requested\":\"OSS\",\"skipped_rules\":[],\"profiling_results\":[]}\n",
+        "stderr": "               \n               \n┌─────────────┐\n│ Scan Status │\n└─────────────┘\n  Scanning 6 files with 1 Code rule:\n  Scanning 6 files.\n                \n                \n┌──────────────┐\n│ Scan Summary │\n└──────────────┘\n✅ Scan completed successfully.\n • Findings: 5 (5 blocking)\n • Rules run: 1\n • Targets scanned: 6\n • Parsed lines: ~100.0%\n • No ignore information available\nRan 1 rule on 6 files: 5 findings.\n"
+      }
+    ],
+    "coverage_note": "File list and hashes are captured by this trusted local harness; not inferred from no findings."
+  },
+  "stale_previous_revision": {
+    "revision": "c6b7c3d21cea4fef054ee05132cdaeef5a3b1212",
+    "source_hashes": {
+      "DirectResolve.java": "110bf4c710c3d1432fb324f8b8d853aff5076ae3b34f6186e51769a79159d78c",
+      "FileJoin.java": "4449bf2ea6d5207724662a1764064ac2dbcc11f14053c763d309ac1fbcb87374",
+      "CheckedNormalize.java": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "DotDotFilter.java": "bf6211cacba7abbdd1498b2e0e0f71b9cab46dee265431c47e4806585afcd1a6",
+      "ConstantFile.java": "2dca761f46e0bf441f1f711b104cf25e7473eeab743e8089db4480be7c0db06b",
+      "StringPrefix.java": "08aa188ab9dfd7542b9ec27b1a0838dfed1e99a9108d4e5ee66dec93e2c02631"
+    },
+    "invoked_files": [
+      "DirectResolve.java",
+      "FileJoin.java",
+      "CheckedNormalize.java",
+      "DotDotFilter.java",
+      "ConstantFile.java",
+      "StringPrefix.java"
+    ],
+    "finding_files": [
+      "CheckedNormalize.java",
+      "ConstantFile.java",
+      "DirectResolve.java",
+      "DotDotFilter.java",
+      "FileJoin.java",
+      "StringPrefix.java"
+    ],
+    "rule_ids": [
+      "local-path-read"
+    ],
+    "scanner": "semgrep",
+    "commands": [
+      {
+        "argv": [
+          "<WORKSPACE>/.venv-semgrep/bin/semgrep",
+          "scan",
+          "--config",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/path_read_rule.yml",
+          "--json",
+          "--metrics=off",
+          "--disable-version-check",
+          "--no-git-ignore",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java"
+        ],
+        "returncode": 0,
+        "stdout": "{\"version\":\"1.183.0\",\"results\":[{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":320},\"end\":{\"line\":6,\"col\":52,\"offset\":341},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":316},\"end\":{\"line\":6,\"col\":52,\"offset\":337},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":317},\"end\":{\"line\":6,\"col\":52,\"offset\":338},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":316},\"end\":{\"line\":6,\"col\":52,\"offset\":337},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":312},\"end\":{\"line\":6,\"col\":52,\"offset\":333},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":316},\"end\":{\"line\":6,\"col\":52,\"offset\":337},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}}],\"errors\":[],\"paths\":{\"scanned\":[\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/ConstantFile.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DotDotFilter.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/FileJoin.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\"]},\"time\":{\"rules\":[],\"rules_parse_time\":0.0006999969482421875,\"profiling_times\":{\"config_time\":0.19822907447814941,\"core_time\":0.23171615600585938,\"ignores_time\":5.91278076171875e-05,\"total_time\":0.4386599063873291},\"parsing_time\":{\"total_time\":0.04988217353820801,\"per_file_time\":{\"mean\":0.008313695589701336,\"std_dev\":1.6296921343281537e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"scanning_time\":{\"total_time\":0.07832241058349609,\"per_file_time\":{\"mean\":0.013053735097249348,\"std_dev\":4.5018825605640966e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"matching_time\":{\"total_time\":0.02203989028930664,\"per_file_and_rule_time\":{\"mean\":0.0036733150482177734,\"std_dev\":7.000987049347412e-09},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_files\":[]},\"tainting_time\":{\"total_time\":0.003952503204345703,\"per_def_and_rule_time\":{\"mean\":0.00021958351135253906,\"std_dev\":6.843252246350556e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_defs\":[]},\"fixpoint_timeouts\":[],\"prefiltering\":{\"project_level_time\":0.0,\"file_level_time\":0.0,\"rules_with_project_prefilters_ratio\":0.0,\"rules_with_file_prefilters_ratio\":1.0,\"rules_selected_ratio\":1.0,\"rules_matched_ratio\":1.0},\"targets\":[],\"total_bytes\":0,\"max_memory_bytes\":134077824},\"engine_requested\":\"OSS\",\"skipped_rules\":[],\"profiling_results\":[]}\n",
+        "stderr": "               \n               \n┌─────────────┐\n│ Scan Status │\n└─────────────┘\n  Scanning 6 files with 1 Code rule:\n  Scanning 6 files.\n                \n                \n┌──────────────┐\n│ Scan Summary │\n└──────────────┘\n✅ Scan completed successfully.\n • Findings: 6 (6 blocking)\n • Rules run: 1\n • Targets scanned: 6\n • Parsed lines: ~100.0%\n • No ignore information available\nRan 1 rule on 6 files: 6 findings.\n"
+      }
+    ],
+    "coverage_note": "File list and hashes are captured by this trusted local harness; not inferred from no findings."
+  },
+  "partial_current": {
+    "revision": "da561c9b19dbcf2566ea89e3984916af1e577380",
+    "source_hashes": {
+      "DirectResolve.java": "eb5b281dbebf8049fab5ec68cf5d9a5577215bdbe8446d89a429d37bb54d568b",
+      "CheckedNormalize.java": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "StringPrefix.java": "af63b6802d1403b38c4ea2071e1f035f588ca2c365e336135644b1c1e52e9db4"
+    },
+    "invoked_files": [
+      "DirectResolve.java",
+      "CheckedNormalize.java",
+      "StringPrefix.java"
+    ],
+    "finding_files": [
+      "CheckedNormalize.java",
+      "DirectResolve.java",
+      "StringPrefix.java"
+    ],
+    "rule_ids": [
+      "local-path-read"
+    ],
+    "scanner": "semgrep",
+    "commands": [
+      {
+        "argv": [
+          "<WORKSPACE>/.venv-semgrep/bin/semgrep",
+          "scan",
+          "--config",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/path_read_rule.yml",
+          "--json",
+          "--metrics=off",
+          "--disable-version-check",
+          "--no-git-ignore",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java",
+          "<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java"
+        ],
+        "returncode": 0,
+        "stdout": "{\"version\":\"1.183.0\",\"results\":[{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":320},\"end\":{\"line\":6,\"col\":52,\"offset\":341},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":239},\"end\":{\"line\":6,\"col\":52,\"offset\":260},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}},{\"check_id\":\"Users.saurav.aryal_1.Projects.ChatGPT_projects.Amazon_Research_Proposals.runs.prelim-supplement-security-03-semgrep-20261031.03.local-path-read\",\"path\":\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\",\"start\":{\"line\":6,\"col\":31,\"offset\":338},\"end\":{\"line\":6,\"col\":52,\"offset\":359},\"extra\":{\"message\":\"Untrusted command-line path reaches a file read (fixture taint rule)\",\"metadata\":{},\"severity\":\"WARNING\",\"fingerprint\":\"requires login\",\"lines\":\"requires login\",\"validation_state\":\"NO_VALIDATOR\",\"engine_kind\":\"OSS\"}}],\"errors\":[],\"paths\":{\"scanned\":[\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/CheckedNormalize.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/DirectResolve.java\",\"<WORKSPACE>/runs/prelim-supplement-security-03-semgrep-20261031/03/java_project/src/StringPrefix.java\"]},\"time\":{\"rules\":[],\"rules_parse_time\":0.0006270408630371094,\"profiling_times\":{\"config_time\":0.22054290771484375,\"core_time\":0.27962422370910645,\"ignores_time\":5.888938903808594e-05,\"total_time\":0.5095601081848145},\"parsing_time\":{\"total_time\":0.02199101448059082,\"per_file_time\":{\"mean\":0.00733033816019694,\"std_dev\":1.2506224164907408e-07},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"scanning_time\":{\"total_time\":0.043737173080444336,\"per_file_time\":{\"mean\":0.014579057693481445,\"std_dev\":1.2158776977836774e-07},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_files\":[]},\"matching_time\":{\"total_time\":0.019359111785888672,\"per_file_and_rule_time\":{\"mean\":0.006453037261962891,\"std_dev\":3.52216981506596e-09},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_files\":[]},\"tainting_time\":{\"total_time\":0.0016162395477294922,\"per_def_and_rule_time\":{\"mean\":0.00017958217196994356,\"std_dev\":3.850613334909639e-08},\"very_slow_stats\":{\"time_ratio\":0.0,\"count_ratio\":0.0},\"very_slow_rules_on_defs\":[]},\"fixpoint_timeouts\":[],\"prefiltering\":{\"project_level_time\":0.0,\"file_level_time\":0.0,\"rules_with_project_prefilters_ratio\":0.0,\"rules_with_file_prefilters_ratio\":1.0,\"rules_selected_ratio\":1.0,\"rules_matched_ratio\":1.0},\"targets\":[],\"total_bytes\":0,\"max_memory_bytes\":94694208},\"engine_requested\":\"OSS\",\"skipped_rules\":[],\"profiling_results\":[]}\n",
+        "stderr": "               \n               \n┌─────────────┐\n│ Scan Status │\n└─────────────┘\n  Scanning 3 files with 1 Code rule:\n  Scanning 3 files.\n                \n                \n┌──────────────┐\n│ Scan Summary │\n└──────────────┘\n✅ Scan completed successfully.\n • Findings: 3 (3 blocking)\n • Rules run: 1\n • Targets scanned: 3\n • Parsed lines: ~100.0%\n • No ignore information available\nRan 1 rule on 3 files: 3 findings.\n"
+      }
+    ],
+    "coverage_note": "File list and hashes are captured by this trusted local harness; not inferred from no findings."
+  },
+  "omitted_rule_pack": {
+    "revision": "da561c9b19dbcf2566ea89e3984916af1e577380",
+    "source_hashes": {
+      "DirectResolve.java": "eb5b281dbebf8049fab5ec68cf5d9a5577215bdbe8446d89a429d37bb54d568b",
+      "FileJoin.java": "6ec577b0fa2567d7cf312f962d361936c1cc27e820eba3e3e712da1d00c0cf8f",
+      "CheckedNormalize.java": "3a26b76b8085665ebd2e63e05b1904462f808dc53ad8c141b4580d444bee01b7",
+      "DotDotFilter.java": "a426b76d3081a5963a2416ea67926061e906d6ccd154227aa6074924e839b490",
+      "ConstantFile.java": "bbd5e878ab30eea66f54d861d73a3a3583ca1959ca4ad599d919eef61b22fc4d",
+      "StringPrefix.java": "af63b6802d1403b38c4ea2071e1f035f588ca2c365e336135644b1c1e52e9db4"
+    },
+    "invoked_files": [
+      "DirectResolve.java",
+      "FileJoin.java",
+      "CheckedNormalize.java",
+      "DotDotFilter.java",
+      "ConstantFile.java",
+      "StringPrefix.java"
+    ],
+    "finding_files": [],
+    "rule_ids": [],
+    "scanner": "semgrep",
+    "commands": [],
+    "coverage_note": "File list and hashes are captured by this trusted local harness; not inferred from no findings."
+  }
+}
