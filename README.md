@@ -62,3 +62,9 @@ The sections are Abstract, Introduction and Background, Methods, Results, Future
 ## Scope
 
 These six authored fixtures are not public CVEs or representative repository samples. Limited dynamic probes do not prove safety. The trusted harness captures revision, file, hash, and rule identity; forged manifests and malicious analyzers are untested. Correct scope does not repair semantic rule incompleteness. The observed reductions in false clearance result from explicit insufficient-evidence decisions, not new vulnerability detection. No LLM triage, targeted recovery, analyst-time, deployment performance, or population error-rate result is measured.
+
+## Preprints.org classification
+
+Subject: **Computer Science and Mathematics**. Topic within Subject: **Software**.
+
+Optional MDPI Topic: [Recent Advances in Security, Privacy, and Trust, 2nd Edition](https://www.mdpi.com/topics/044g6136h2). The detailed classification is in `PREPRINTS_METADATA.txt`. These metadata do not imply a submission.

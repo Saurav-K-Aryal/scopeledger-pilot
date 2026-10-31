@@ -142,6 +142,39 @@
       "source_sha256": "2993fcf5897eb3c720e98a938ed54aa1958c920cf443b8aaac6ac0fc7c0038d4",
       "published_sha256": "2993fcf5897eb3c720e98a938ed54aa1958c920cf443b8aaac6ac0fc7c0038d4",
       "transformation": "none"
+    },
+    {
+      "source": "outputs/pilot_papers/03_scopeledger/README.md",
+      "published": "README.md",
+      "source_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
+      "published_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive"
+    },
+    {
+      "source": "outputs/pilot_papers/03_scopeledger/PREPRINTS_METADATA.txt",
+      "published": "PREPRINTS_METADATA.txt",
+      "source_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
+      "published_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive"
+    },
+    {
+      "source": "work/public_repos/scopeledger-pilot/CITATION.cff",
+      "published": "CITATION.cff",
+      "source_sha256": "eb2fff6a8262322e88abad96e52a571d7642e20f340d3b78625bfda1c9fb025c",
+      "published_sha256": "eb2fff6a8262322e88abad96e52a571d7642e20f340d3b78625bfda1c9fb025c",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive"
+    },
+    {
+      "source": "outputs/pilot_papers/03_scopeledger_overleaf.zip",
+      "published": "overleaf.zip",
+      "source_sha256": "fe0e725b9dfd0f388c8f5fa7ff428c49cfa64468afb43e1883abea20c3cf63e1",
+      "published_sha256": "fe0e725b9dfd0f388c8f5fa7ff428c49cfa64468afb43e1883abea20c3cf63e1",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive"
     }
-  ]
+  ],
+  "release_update": "Refreshed manuscript/metadata and citation record; measured data preserved."
 }
