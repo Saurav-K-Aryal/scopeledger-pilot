@@ -146,18 +146,24 @@
     {
       "source": "outputs/pilot_papers/03_scopeledger/README.md",
       "published": "README.md",
-      "source_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
-      "published_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
+      "source_sha256": "de8e85e443d76c4847d5a61acbc581a101be982955429f1e678ab8b179196ea6",
+      "published_sha256": "de8e85e443d76c4847d5a61acbc581a101be982955429f1e678ab8b179196ea6",
       "transformation": "none",
-      "kind": "release metadata or manuscript archive"
+      "kind": "release metadata or manuscript archive",
+      "previous_published_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
+      "previous_source_sha256": "f87ce7f6816ee1538bdb493489a4e04354f1502e59ccf5441c12d192c46db02d",
+      "release_revision": "Eight-paper release metadata/manuscript refresh; numerical evidence unchanged."
     },
     {
       "source": "outputs/pilot_papers/03_scopeledger/PREPRINTS_METADATA.txt",
       "published": "PREPRINTS_METADATA.txt",
-      "source_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
-      "published_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
+      "source_sha256": "ce88a8dcbb230f70fa2cb012783f7ce7c963b5547ee7c44e115380304af90497",
+      "published_sha256": "ce88a8dcbb230f70fa2cb012783f7ce7c963b5547ee7c44e115380304af90497",
       "transformation": "none",
-      "kind": "release metadata or manuscript archive"
+      "kind": "release metadata or manuscript archive",
+      "previous_published_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
+      "previous_source_sha256": "d8ded1916fd7710b7047147df0ff6b7d60a8b0c067af70883a114d1f59d625f2",
+      "release_revision": "Eight-paper release metadata/manuscript refresh; numerical evidence unchanged."
     },
     {
       "source": "work/public_repos/scopeledger-pilot/CITATION.cff",
@@ -174,6 +180,30 @@
       "published_sha256": "fe0e725b9dfd0f388c8f5fa7ff428c49cfa64468afb43e1883abea20c3cf63e1",
       "transformation": "none",
       "kind": "release metadata or manuscript archive"
+    },
+    {
+      "source": "outputs/pilot_papers/03_scopeledger/SUMMARY.txt",
+      "published": "SUMMARY.txt",
+      "source_sha256": "be813a60a51ca7d6c429f428f5376174bbb3122d4c425b620e3d994287810f2d",
+      "published_sha256": "be813a60a51ca7d6c429f428f5376174bbb3122d4c425b620e3d994287810f2d",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive/preview"
+    },
+    {
+      "source": "work/public_repos/scopeledger-pilot/.gitignore",
+      "published": ".gitignore",
+      "source_sha256": "fc478a279dfd18c82cc8e6881b23b782b2b8e0ada14528f85ea86305fd01ed1e",
+      "published_sha256": "fc478a279dfd18c82cc8e6881b23b782b2b8e0ada14528f85ea86305fd01ed1e",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive/preview"
+    },
+    {
+      "source": "outputs/pilot_papers/03_scopeledger/draft.pdf",
+      "published": "paper.pdf",
+      "source_sha256": "57a551ea04c032c332d895246fe4a17f1513ad945222b7551855609c33033ab4",
+      "published_sha256": "57a551ea04c032c332d895246fe4a17f1513ad945222b7551855609c33033ab4",
+      "transformation": "none",
+      "kind": "release metadata or manuscript archive/preview"
     }
   ],
   "release_update": "Refreshed manuscript/metadata and citation record; measured data preserved."
